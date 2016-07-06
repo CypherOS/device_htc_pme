@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml
 
+# Gesture Handler
+PRODUCT_PACKAGES += \
+    GestureHandler
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8996 \
