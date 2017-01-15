@@ -2,31 +2,31 @@
   {
     "repository":  "kernel_htc_msm8996",
     "target_path": "kernel/htc/msm8996",
-	"branch":      "n7.1",
+	"branch":      "nougat-mr1",
 	"remote":      "aoscp"
   },
  {
    "repository":  "device_qcom_common",
    "target_path": "device/qcom/common",
-   "branch":      "n7.1",
+   "branch":      "nougat-mr1",
    "remote":      "aoscp"
  },
  {
    "repository":  "vendor_nxp-nfc_opensource_frameworks",
    "target_path": "vendor/nxp-nfc/opensource/frameworks",
-   "branch":      "n7.1",
+   "branch":      "nougat-mr1",
    "remote":      "aoscp"
  },
  {
    "repository":  "vendor_nxp-nfc_opensource_libnfc-nci",
    "target_path": "vendor/nxp-nfc/opensource/libnfc-nci",
-   "branch":      "n7.1",
+   "branch":      "nougat-mr1",
    "remote":      "aoscp"
  },
  {
    "repository":  "vendor_nxp-nfc_opensource_Nfc",
    "target_path": "vendor/nxp-nfc/opensource/Nfc",
-   "branch":      "n7.1",
+   "branch":      "nougat-mr1",
    "remote":      "aoscp"
  }
 ]
