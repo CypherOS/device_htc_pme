@@ -6,6 +6,12 @@
 	"remote":      "aoscp"
   },
  {
+   "repository":  "proprietary_vendor_htc",
+   "target_path": "vendor/htc",
+   "branch":      "nougat-mr1",
+   "remote":      "aoscp"
+ },
+ {
    "repository":  "device_qcom_common",
    "target_path": "device/qcom/common",
    "branch":      "nougat-mr1",

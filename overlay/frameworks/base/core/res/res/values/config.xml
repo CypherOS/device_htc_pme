@@ -107,7 +107,6 @@
         <item>@string/reboot_reboot</item>
         <item>@string/reboot_soft</item>
         <item>@string/reboot_recovery</item>
-        <item>@string/reboot_download</item>
     </array>
 
     <!-- Do not translate. Defines the shutdown actions passed to the kernel.
