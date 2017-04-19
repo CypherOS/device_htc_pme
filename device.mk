@@ -36,7 +36,7 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:system/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
@@ -153,7 +154,6 @@ PRODUCT_COPY_FILES += \
 
 # HTC Logging functions
 PRODUCT_PACKAGES += \
-    libhlg \
     liblog_htc
 
 # Init
@@ -242,6 +242,10 @@ PRODUCT_PACKAGES += \
     power.msm8996 \
     thermal.msm8996
 
+# Properties
+PRODUCT_PACKAGES += \
+    operator-properties
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
@@ -252,6 +256,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libshim_ril \
     libxml2
+
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
 
 # Wifi
 PRODUCT_PACKAGES += \
