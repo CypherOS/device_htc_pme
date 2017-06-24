@@ -133,10 +133,6 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8996 \
     fingerprintd
 
-# Gesture Handler
-PRODUCT_PACKAGES += \
-    GestureHandler
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8996 \
