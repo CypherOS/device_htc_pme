@@ -62,7 +62,6 @@
 
     <!-- Allow user to adjust button brightness from settings -->
     <integer name="config_buttonBrightnessSettingDefault">110</integer>
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -232,14 +231,6 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">83</integer>
-
-    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
-         delimited by File.pathSeparator, which defaults to ":" on Android -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/framework/com.cyanogenmod.keyhandler.jar</string>
-
-    <!-- Full qualified name of the class that implements
-         com.android.internal.os.DeviceKeyHandler interface. -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">com.cyanogenmod.settings.device.KeyHandler</string>
 
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
