@@ -210,3 +210,5 @@ persist.sys.disable_rescue=true
 ro.opa.eligible_device=true
 keyguard.no_require_sim=true
 
+# Offscreen Gestures
+sys.gestures.offscreen=0

@@ -492,6 +492,10 @@ on boot
     chown system system /sys/class/leds/lcd-backlight/burst_switch
     chown system system /sys/class/leds/lcd-backlight-nits/brightness
 
+    # Screen off Gestures
+    chown root system /sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion
+    chmod 0666 /sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion
+
     # HDMI
     chmod 644 /sys/class/graphics/fb1/hpd
     chmod 644 /sys/class/graphics/fb1/res_info
@@ -1042,6 +1046,11 @@ on property:persist.sys.htcdebugflag=0
     setprop persist.log.tag.camera-HTC-AEC W
     setprop persist.log.tag.QCamera2HWI W
     setprop persist.log.tag.EXT_REF W
+
+on property:sys.gestures.offscreen=0
+    write /sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion 0
+on property:sys.gestures.offscreen=1
+    write /sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion 1
 
 # Triggers start here
 on class_start:late_start
